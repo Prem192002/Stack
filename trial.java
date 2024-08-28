@@ -9,5 +9,7 @@ public class trial {
     st.push(25);
     st.push(30);
 
+    System.out.println(st.peek());
+
     }
 }
