@@ -7,6 +7,7 @@ public class trial {
     st.push(15);
     st.push(20);
     st.push(25);
+    st.push(30);
 
     }
 }
