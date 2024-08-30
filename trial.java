@@ -2,14 +2,20 @@ import java.util.*;
 public class trial {
     public static void main(String[] args) {
     Stack<Integer> st = new Stack<>();
-    st.push(5);
-    st.push(10);
-    st.push(15);
-    st.push(20);
-    st.push(25);
-    st.push(30);
+    Scanner sc = new Scanner(System.in);
+    int size = sc.nextInt();
 
-    System.out.println(st.peek());
+    for(int i=0;i<size;i++){
+        st.push(sc.nextInt());
+    }
 
+    Stack<Integer> rt = new Stack<>();
+    while(st.size()!=0){
+        rt.push(st.pop());
+    }
+
+    System.out.println(st);
+    System.out.println(rt);
+    
     }
 }
