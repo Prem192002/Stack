@@ -9,13 +9,18 @@ public class trial {
         st.push(sc.nextInt());
     }
 
-    Stack<Integer> rt = new Stack<>();
-    while(st.size()!=0){
-        rt.push(st.pop());
-    }
+    int[] arr = new int[st.size()];
 
+    for(int i=arr.length-1;i>=0;i--){
+        arr[i]=st.pop();
+    }
+    int i=arr.length;
+    while(st.size()!=arr.length){
+        st.push(arr[i-1]);
+        i--;
+
+    }
     System.out.println(st);
-    System.out.println(rt);
     
     }
 }
